@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Learn</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/createUser">Create</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- form -->
+    <form action="/user" method="POST">
+        <div class="mb-3">
+          <label for="" class="">Email address</label>
+          <input type="text" class="" id="" name="email" >
+          
+        </div>
+        <div class="mb-3">
+          <label for="" class="">Name</label>
+          <input type="text" class="" id="" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="" class="">city</label>
+            <input type="text" class="" id="" name="city">
+          </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+</body>
+</html>
