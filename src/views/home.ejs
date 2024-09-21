@@ -38,19 +38,20 @@
         </tr>
       </thead>
       <tbody>
-        <% User.forEach(function(user) { %>
+        <% user.forEach(function(user) { %>
           <tr>
-            <th scope="row"><%= user.id %></th>
+            <td><%= user._id %></td>
             <td><%= user.name %></td>
             <td><%= user.email %></td>
             <td><%= user.city %></td>
             <td>
               <div>
-                <a href="/editUser/<%= user.id %>" >edit</a>
+                <a href="/editUser/<%= user._id %>" >edit</a>
               </div>
               <div>
-                <a href="/deleteUser/<%=user.id %>">delete</a>
-                
+                <form action="/deleteUser/<%= user._id %>" method="POST">
+                  <button type="submit">Delete</button>
+                </form>                
               </div>
             </td>
           </tr>

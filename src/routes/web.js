@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const {getHomePage,getCart, getUser,deleteUser, createViewUser,getEditUser,updateUser} = require('../controllers/homeController')
+const {getHomePage,getCart, newUser,deleteUser, viewCreateUser,EditUser,updateUser} = require('../controllers/homeController')
 
 router.get('/', getHomePage);
 router.get('/cart', getCart);
-router.post('/user', getUser);
-router.get('/createUser', createViewUser);
-router.get('/editUser/:id', getEditUser);
+router.post('/user', newUser);
+router.get('/createUser', viewCreateUser);
+router.get('/editUser/:id', EditUser);
 router.post('/updateUser/:id', updateUser);
-router.get('/deleteUser/:id', deleteUser);
+router.post('/deleteUser/:id', deleteUser);
 module.exports = router;

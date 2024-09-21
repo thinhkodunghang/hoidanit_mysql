@@ -28,19 +28,19 @@
         </div>
     </nav>
     <!-- form -->
-    <form action="/updateUser/<%=User.id%>" method="POST">
+    <form action="/updateUser/<%=user.id%>" method="POST">
         <div class="mb-3">
           <label for="" class="">Email address</label>
-          <input type="text" class="" id="" name="email" value="<%=User.email %>">
+          <input type="text" class="" id="" name="email" value="<%=user.email %>">
           
         </div>
         <div class="mb-3">
           <label for="" class="">Name</label>
-          <input type="text" class="" id="" name="name" value="<%=User.name %>">
+          <input type="text" class="" id="" name="name" value="<%=user.name %>">
         </div>
         <div class="mb-3">
             <label for="" class="">city</label>
-            <input type="text" class="" id="" name="city" value="<%=User.city %>">
+            <input type="text" class="" id="" name="city" value="<%=user.city %>">
           </div>
         <button type="submit" class="btn btn-outline-primary">Submit</button>
       </form>
